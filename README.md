@@ -27,8 +27,9 @@ responsive-landing-page/<br>
 ---
 
 ## 📸 Screenshots
-<img width="1920" height="1020" alt="RS-LANDING-PAGE" src="https://github.com/user-attachments/assets/abede8b1-56a7-4a5e-b9e1-922899b09538" />
-<img width="1920" height="1020" alt="CONTACT-" src="https://github.com/user-attachments/assets/075269c3-19a3-40b1-8de2-d1ac5d4450e0" />
+<img width="1920" height="1020" alt="RS-LANDING-PAGE" src="https://github.com/user-attachments/assets/3cd75bdd-d769-4580-b3d5-50eadeee3934" />
+<img width="1920" height="1020" alt="CONTACT-" src="https://github.com/user-attachments/assets/c182bdb9-bfca-4366-bb92-a165cdf912d4" />
+
 
 ---
 
