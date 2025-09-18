@@ -37,10 +37,10 @@ responsive-landing-page/<br>
 Clone the repository and run locally:
 
 1 Clone repo<br>
-git clone 
+git clone https://github.com/Rudrakshi16/WD_1_RESPONSIVE-LANDING-PAGE_ARITHMATRIX.git
 
 2 Open project<br>
-cd WD_1_RESPONSIVE_LANDING_PAGE_ARITHMATRIX
+cd WD_1_RESPONSIVE-LANDING-PAGE_ARITHMATRIX
 
 ---
 
