@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta basics -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ArithMatrix – Digital Solutions Landing</title>
+  <meta name="description"
+    content="A refreshed responsive landing page built under the ArithMatrix Internship. Showcasing creativity, innovation, and user-first experience." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark" aria-hidden="true">⚡</span>
+        <span>ArithMatrix</span>
+      </a>
+
+      <nav class="links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#get-started">Start Now</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav"
+        aria-label="Open Menu">☰</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobileNav" hidden class="container" aria-label="Mobile">
+      <div style="display:grid; gap:.5rem; padding:0 0 1rem 0;">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#get-started">Start Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="badge">🚀 Innovative</span>
+          <h1 class="title">Transform Ideas Into Reality</h1>
+          <p class="subtitle">We craft modern solutions that empower businesses, drive growth, and delight users.</p>
+          <div class="cta-row">
+            <a class="btn" href="#get-started">Get Started</a>
+            <a class="btn secondary" href="#features">Explore Features</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60"
+            alt="Abstract tech illustration">
+        </aside>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="features-title">What We Offer</h2>
+          <p>Our toolkit is designed to give your brand the competitive edge.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal">
+            <h3>🚀 Fast Deployment</h3>
+            <p>Get your product online quickly with streamlined solutions.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>🎨 Modern UI/UX</h3>
+            <p>Designed with elegance, accessibility, and user focus in mind.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>💡 Smart Innovation</h3>
+            <p>Powered by creativity and backed by scalable technology.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="cta reveal" id="get-started">
+          <h2>Why Work With Us?</h2>
+          <p>Because we don’t just deliver projects, we deliver experiences that create lasting impact.</p>
+          <a class="btn" href="#contact">Let’s Talk</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <h2>What People Say</h2>
+          <p>Trusted by professionals and businesses worldwide.</p>
+        </div>
+        <div class="grid">
+          <blockquote class="card">“ArithMatrix transformed our workflow completely. Highly recommend!” <br>— Client A
+          </blockquote>
+          <blockquote class="card">“Beautiful design, smooth experience, and reliable team.” <br>— Client B</blockquote>
+          <blockquote class="card">“The best digital partner we could’ve asked for.” <br>— Client C</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Get In Touch</h2>
+          <p>Drop your details below — we’ll get back within 24 hours.</p>
+        </div>
+        <div class="card contact-form">
+          <form id="contactForm">
+            <label for="email">Your Email</label>
+            <input id="email" name="email" type="email" required placeholder="name@company.com">
+            <label for="msg">Your Message</label>
+            <textarea id="msg" name="message" rows="4" placeholder="Tell us about your idea..."></textarea>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+          <p id="formMsg"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credits -->
+    <section id="credits">
+      <div class="container credits">
+        <h2>Credits</h2>
+        <p>
+          Built as part of the <strong>ArithMatrix Internship</strong><br>
+          Redesigned & Developed by <strong>Rudrakshi Naiwal</strong>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <small>© <span id="year"></span> ArithMatrix. All rights reserved.</small>
+      <div class="foot-links">
+        <a href="#top">Back to top</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = !mobileNav.hasAttribute('hidden');
+      if (isOpen) {
+        mobileNav.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      } else {
+        mobileNav.removeAttribute('hidden');
+        menuBtn.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('formMsg').textContent = "✅ Thanks! We'll contact you soon.";
+      this.reset();
+    });
+  </script>
+</body>
+
+</html>
